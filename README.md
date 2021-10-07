@@ -14,7 +14,7 @@
 
   After finishing programming the logic for the circuit it can be clearly seen that setting the range to something below 50 results in every number from 1-49 being displayed with every turn of the potentiometer. Whereas when the range is set to 0-99 double the limit every other digit is show from 0-99, eg 99,97,95,93, etc...
 
-Below are six diagrams showing the difference between and range below 50 and above 50.
+Below are six diagrams showing the difference between the range below 50 and above 50.
 
 ![output-onlinepngtools](https://user-images.githubusercontent.com/81877767/136445098-b2f88fc9-4b53-4687-ac2b-9a338a230fea.png)
 ![output-onlinepngtools (1)](https://user-images.githubusercontent.com/81877767/136445100-1f951f87-c921-4f67-be4d-10290d3eadd8.png)

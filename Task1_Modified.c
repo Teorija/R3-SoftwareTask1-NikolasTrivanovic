@@ -27,11 +27,11 @@ void convertPotentiometerToDisplay(int potentiometer_value_10bit, int range_min,
   int size = range_max - range_min;
   
   //the default output value of the potentiometer is from 0 to 1023
-  //if we want the change in the potentiometer to correspond to digits 0-99 (100 digits)
-  //then we need to scale down the default output of the potentiometer from 1023 to 99
-  //0-99 (100 numbers, 0/anything=0 so we don't need to include it), 1023/99=10.333333
-  //by dividing 1023 by 10.333333 every movement of the potentiometer is mapped from 0-99
-  float potentiometer_value_decimal = potentiometer_value_10bit/(1023/size);
+  //if we want the change in the potentiometer to correspond to digits 0-X digits
+  //then we need to scale down the default output of the potentiometer from 1023 to X,
+  //0-X (X numbers, 0/anything=0 so we don't need to include it), 1023/X= step size
+  //by dividing 1023 by 1023/X  every movement of the potentiometer is mapped from 0-X
+  float potentiometer_value_decimal = (float)potentiometer_value_10bit/((float)1023/(float)size);
   
   //to obtain the value of the ones digit the modulo is used
   //modulo is used because it gives the reamined after division

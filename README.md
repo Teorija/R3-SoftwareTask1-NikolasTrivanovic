@@ -16,5 +16,8 @@ Below are six diagrams showing the difference between and range below 50 and abo
 ![output-onlinepngtools (1)](https://user-images.githubusercontent.com/81877767/136445100-1f951f87-c921-4f67-be4d-10290d3eadd8.png)
 ![output-onlinepngtools (2)](https://user-images.githubusercontent.com/81877767/136445096-7f4cc84b-23f0-4f0f-9d32-6d2e98a9221b.png)
 
+![output-onlinepngtools (4)](https://user-images.githubusercontent.com/81877767/136473027-ca5a85c1-35cf-4f11-b314-7e19e406824a.png)
+![output-onlinepngtools (5)](https://user-images.githubusercontent.com/81877767/136473038-6262eea6-3efa-4491-a4fb-5f07e5c144cd.png)
+
 link to the TinkerCAD circuit simulation 
 https://www.tinkercad.com/things/0JJsqN7cakL-trainingtask1

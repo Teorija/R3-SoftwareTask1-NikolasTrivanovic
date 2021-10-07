@@ -29,15 +29,15 @@ void convertPotentiometerToDisplay(int ones, int tens) {
   //the first 4 elements of the array is the BCD (LSB- 1st, MSB - 4th)
   //the fifth element is the digit identifier for the potentiometer value passed in
   int digits[10][5] {{0,0,0,0,0},
-     		     {1,0,0,0,1},
-     		     {0,1,0,0,2},
-       	     {1,1,0,0,3},
-        	     {0,0,1,0,4},
-         	     {1,0,1,0,5},
-          	     {0,1,1,0,6},
-           	     {1,1,1,0,7},
-            	     {0,0,0,1,8},
-             	     {1,0,0,1,9}}; 
+     		             {1,0,0,0,1},
+     		             {0,1,0,0,2},
+       	             {1,1,0,0,3},
+        	           {0,0,1,0,4},
+         	           {1,0,1,0,5},
+          	         {0,1,1,0,6},
+           	         {1,1,1,0,7},
+            	       {0,0,0,1,8},
+             	       {1,0,0,1,9}}; 
   
   //given the ones and tens value run through the array of digits to find its BCD match
   //when a digit matches use the BCD associated with the digit as input for the decoder

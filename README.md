@@ -16,13 +16,13 @@
 
 Below are six diagrams showing the difference between the range below 50 and above 50.
 
-![output-onlinepngtools](https://user-images.githubusercontent.com/81877767/136445098-b2f88fc9-4b53-4687-ac2b-9a338a230fea.png)
-![output-onlinepngtools (1)](https://user-images.githubusercontent.com/81877767/136445100-1f951f87-c921-4f67-be4d-10290d3eadd8.png)
-![output-onlinepngtools (2)](https://user-images.githubusercontent.com/81877767/136445096-7f4cc84b-23f0-4f0f-9d32-6d2e98a9221b.png)
+![output-onlinepngtools (8)](https://user-images.githubusercontent.com/81877767/136610008-daa967ab-06e7-4dc3-aa6b-4a5b57ae7a95.png)
+![output-onlinepngtools (9)](https://user-images.githubusercontent.com/81877767/136610030-67f02b3c-f077-4db5-8187-fcd4490f992c.png)
+![output-onlinepngtools (10)](https://user-images.githubusercontent.com/81877767/136610040-a993c50f-a04d-433c-a16b-7ce5ae1fdb7c.png)
 
-![output-onlinepngtools (4)](https://user-images.githubusercontent.com/81877767/136473027-ca5a85c1-35cf-4f11-b314-7e19e406824a.png)
-![output-onlinepngtools (5)](https://user-images.githubusercontent.com/81877767/136473038-6262eea6-3efa-4491-a4fb-5f07e5c144cd.png)
-![output-onlinepngtools (6)](https://user-images.githubusercontent.com/81877767/136473046-03ff0596-df43-45e0-8e32-2f3d73e560d3.png)
+![output-onlinepngtools (11)](https://user-images.githubusercontent.com/81877767/136610046-bfff57d2-7639-4203-88de-523255bb44bf.png)
+![output-onlinepngtools (12)](https://user-images.githubusercontent.com/81877767/136610067-d37240f0-96c6-495c-b05c-e2d1d500345a.png)
+![output-onlinepngtools (13)](https://user-images.githubusercontent.com/81877767/136610069-c53a040b-b5fd-422d-a685-23da0ee5a6a0.png)
 
 link to the TinkerCAD circuit simulation: 
 https://www.tinkercad.com/things/0JJsqN7cakL-trainingtask1

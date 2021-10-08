@@ -66,15 +66,15 @@ void convertPotentiometerToDisplay(int potentiometer_value_10bit, int range) {
   for (int i=0; i<10; i++) {
     //write to 7 segment display showing the ones digit
     if (digits[i][4] == ones_digit) {   
-      digitalWrite(INPUTB1, digits[i][0]);
- 	    digitalWrite(INPUTB2, digits[i][1]);
+        digitalWrite(INPUTB1, digits[i][0]);
+ 	  digitalWrite(INPUTB2, digits[i][1]);
   	  digitalWrite(INPUTB3, digits[i][2]);
   	  digitalWrite(INPUTB4, digits[i][3]);
     }
     //write to 7 segment display showing the tens digit
     if (digits[i][4] == tens_digit) {
-      digitalWrite(INPUTA1, digits[i][0]);
- 	    digitalWrite(INPUTA2, digits[i][1]);
+        digitalWrite(INPUTA1, digits[i][0]);
+ 	  digitalWrite(INPUTA2, digits[i][1]);
   	  digitalWrite(INPUTA3, digits[i][2]);
   	  digitalWrite(INPUTA4, digits[i][3]); 
     }

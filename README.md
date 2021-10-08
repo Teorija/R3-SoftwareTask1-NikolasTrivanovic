@@ -1,7 +1,7 @@
 # R3-SoftwareTask1-NikolasTrivanovic
 
 <p align="center">
-  <img width="260" height="400" src="https://user-images.githubusercontent.com/81877767/136469263-36d8c45d-d036-4b87-8614-06a24f9e427b.png">
+  <img width="260" height="400" src="https://user-images.githubusercontent.com/81877767/136609085-2e440aed-14ad-4148-a20e-1c96b40ff81f.png">
 </p>
 
   Displayed above is a diagram of a circuit/system that translates the potentiometer position to a number between 0 and 99. The circuit consists of an arduino uno, 2 7-segment displays, 2 7-segment decoders and 1 potentiometer. A potentiometer is a variable resistor so the value being translated to the two 7-segment displays is the current resistance level (0 being minimum and 99 being maximum). In order to display the translated value mentioned previously 2 7-segment decoders are used to convert binary coded decimal (BCD) values to the desired digit on the display. These BCD values turn on specific segments of the display (A,B,C,D,E,F,G) creating the desired number. Ten different BCD values are used to represent the 10 possible digits, 0-9. The inputs of the decoders are connected to unused pins on the arduino from which a program can assign HIGH (1) and LOW (0) values to the decoder depending on the potentiometers position (resistance level). 

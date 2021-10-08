@@ -23,15 +23,13 @@ void setup() {
   pinMode(2, OUTPUT);
 }
 
-void convertPotentiometerToDisplay(int potentiometer_value_10bit, int range_min, int range_max) {
-  int size = range_max - range_min;
-  
+void convertPotentiometerToDisplay(int potentiometer_value_10bit, int range) {
   //the default output value of the potentiometer is from 0 to 1023
   //if we want the change in the potentiometer to correspond to digits 0-X digits
   //then we need to scale down the default output of the potentiometer from 1023 to X,
   //0-X (X numbers, 0/anything=0 so we don't need to include it), 1023/X= step size
   //by dividing 1023 by 1023/X  every movement of the potentiometer is mapped from 0-X
-  float potentiometer_value_decimal = (float)potentiometer_value_10bit/((float)1023/(float)size);
+  float potentiometer_value_decimal = (float)potentiometer_value_10bit/((float)1023/(float)range);
   
   //to obtain the value of the ones digit the modulo is used
   //modulo is used because it gives the reamined after division
@@ -88,5 +86,5 @@ void loop() {
   int potentiometer_value_10bit = analogRead(A0);
   
   //translate the potentiometer to the displays given a specific range of values to be mapped to
-  convertPotentiometerToDisplay(potentiometer_value_10bit, 0, 99);
+  convertPotentiometerToDisplay(potentiometer_value_10bit, 99);
 }

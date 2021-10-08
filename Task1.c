@@ -1,8 +1,8 @@
 //first digit decoder input pins
-#define INPUTA1 3
+#define INPUTA1 2
 #define INPUTA2 5
 #define INPUTA3 4
-#define INPUTA4 2
+#define INPUTA4 3
 
 //second digit decoder input pins
 #define INPUTB1 10

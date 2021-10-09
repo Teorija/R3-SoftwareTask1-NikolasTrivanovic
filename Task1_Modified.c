@@ -9,6 +9,23 @@
 #define INPUTB3 12
 #define INPUTB4 11
 
+//hardcoded array of digits 0-9 in BCD for the decoder inputs (A,B,C,D)
+  //the first 4 elements of the array is the BCD (LSB- 1st, MSB - 4th)
+  //the fifth element is the digit identifier for the potentiometer value passed in
+  int digits[10][5] 
+  {
+  {0,0,0,0,0},
+  {1,0,0,0,1},
+  {0,1,0,0,2},
+  {1,1,0,0,3},
+  {0,0,1,0,4},
+  {1,0,1,0,5},
+  {0,1,1,0,6},
+  {1,1,1,0,7},
+  {0,0,0,1,8},
+  {1,0,0,1,9}
+  }; 
+
 void setup() {
   Serial.begin(9600);
   
@@ -43,23 +60,6 @@ void convertPotentiometerToDisplay(int potentiometer_value_10bit, int range) {
   //this time were ignoring the remainder
   //eg 56/10 ---> D=5 (tens digit)
   int tens_digit = ((int)(potentiometer_value_decimal))/10;
-  
-  //hardcoded array of digits 0-9 in BCD for the decoder inputs (A,B,C,D)
-  //the first 4 elements of the array is the BCD (LSB- 1st, MSB - 4th)
-  //the fifth element is the digit identifier for the potentiometer value passed in
-  int digits[10][5] 
-  {
-  {0,0,0,0,0},
-  {1,0,0,0,1},
-  {0,1,0,0,2},
-  {1,1,0,0,3},
-  {0,0,1,0,4},
-  {1,0,1,0,5},
-  {0,1,1,0,6},
-  {1,1,1,0,7},
-  {0,0,0,1,8},
-  {1,0,0,1,9}
-  }; 
   
   //given the ones and tens value run through the array of digits to find its BCD match
   //when a digit matches use the BCD associated with the digit as input for the decoder

@@ -12,7 +12,7 @@
 //hardcoded array of digits 0-9 in BCD for the decoder inputs (A,B,C,D)
   //the first 4 elements of the array is the BCD (LSB- 1st, MSB - 4th)
   //the fifth element is the digit identifier for the potentiometer value passed in
-  int digits[10][5] 
+  const int digits[10][5] 
   {
   {0,0,0,0,0},
   {1,0,0,0,1},

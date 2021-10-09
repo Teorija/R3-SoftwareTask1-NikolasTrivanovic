@@ -85,6 +85,6 @@ void loop() {
   //read the voltage value from A0 after it passes through the potentiometer
   int potentiometer_value_10bit = analogRead(A0);
   
-  //translate the potentiometer to the displays given a specific range of values to be mapped to
+  //translate the potentiometer to the displays given a specific range of values to be mapped to (in the case of this task its 0-99)
   convertPotentiometerToDisplay(potentiometer_value_10bit, 99);
 }

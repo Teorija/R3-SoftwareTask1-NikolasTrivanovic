@@ -13,6 +13,8 @@
   Once the potentiometer value has been mapped and the ones and tens digits have been seperated we can loop through an array storing all the possible digits (0-9) with their respective BCD value (eg, 9 BCD=1001 ---> A(1),B(1),C(1),D(0),E(0),F(1),G(1)). Using these prestored BCD values we can set the output voltage (1=HIGH, 0=LOW) to the pins for the decoders to turn on the 7-segment displays (to the appropriate digit) as the potentiometer changes positions/values.
 
   After finishing programming the logic for the circuit it can be clearly seen that setting the range to something below 50 results in every number from 1-49 being displayed with every turn of the potentiometer. Whereas when the range is set to 0-99 double the limit every other digit is show from 0-99, eg 99,97,95,93, etc...
+  
+  The same logic can be applied to any number of digits being displayed. For example adding a third digit display requires seperating the translated digit into hunderds, tens and ones. However given the step size of the resistor (20-21) more numbers will be skipped in the display (ie 49 - every digit show, 99 - every other digit shown, 200 - every fourth digit shown etc...).
 
 Below are six diagrams showing the difference between the range below 50 and above 50.
 
